@@ -6,8 +6,7 @@ import Repository from './pages/Repository';
 function App() {
   return (
     <>
-      <Dashboard nome="alex"/>
-      <Repository reposirory="github-app" />
+      <Dashboard />
     </>
   );
 }
