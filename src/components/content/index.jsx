@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import Card from '../card';
+
 import {Layout} from 'antd';
 
 const {Content} = Layout;
@@ -9,12 +11,12 @@ class ComponentContent extends Component{
     return(
       <Content
         style={{
-          margin: '0 50px',
-          minHeight: '525px'
-
+          paddingTop: '20px',
+          minHeight: '525px',
+          background: '#ECECEC',
         }}
       >
-        Hello World
+        <Card/>
       </Content>
     )
   }
