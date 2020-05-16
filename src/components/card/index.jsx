@@ -1,11 +1,29 @@
 import React, {Component} from 'react';
 
-class Card extends Component{
+import {Card} from 'antd';
+
+import {DeleteOutlined, ArrowRightOutlined} from '@ant-design/icons';
+
+class ComponentCard extends Component{
   render(){
     return(
-      <h1>Sou um card</h1>
+      <Card
+        title="Card title"
+        bordered={true}
+        style={{
+          width:300,
+          marginLeft: '20px',
+        }}
+        actions={[
+          <DeleteOutlined />,
+          <ArrowRightOutlined />
+        ]}
+
+      >
+        <p>Descrição</p>
+      </Card>
     )
   }
 }
 
-export default Card;
+export default ComponentCard;
