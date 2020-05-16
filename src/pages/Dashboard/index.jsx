@@ -1,9 +1,17 @@
 import React from 'react';
 
+import Header from '../../components/header';
+import Footer from '../../components/footer';
+import Content from '../../components/content';
+
 class Dashboard extends React.Component{
   render(){
     return (
-    <h1>{this.props.nome}</h1>
+      <>
+        <Header />
+        <Content />
+        <Footer />
+      </>
     )
   }
 }
