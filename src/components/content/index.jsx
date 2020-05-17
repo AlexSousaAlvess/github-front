@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 
+import Search from '../search';
 import Card from '../card';
 
 import {Layout} from 'antd';
 
 const {Content} = Layout;
+
+
+
 
 class ComponentContent extends Component{
   render(){
@@ -16,6 +20,7 @@ class ComponentContent extends Component{
           background: '#ECECEC',
         }}
       >
+        <Search/>
         <Card/>
       </Content>
     )
