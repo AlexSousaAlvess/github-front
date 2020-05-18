@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 
-// import {} from './styles';
+import {Div} from './styles';
 
 class Footer extends Component{
   render(){
     return(
-      <h1>Eu sou um footer</h1>
+      <Div>
+        <p>Github app / By alex</p>
+      </Div>
     )
   }
 }
