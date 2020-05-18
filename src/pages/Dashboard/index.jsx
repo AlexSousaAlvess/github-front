@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import Header from '../../components/header';
+import Header from '../../components/header';
 // import Footer from '../../components/footer';
 
 const datas = [
@@ -34,7 +34,10 @@ const datas = [
 class Dashboard extends React.Component{
   render(){
     return (
-     <h1>Dashboard</h1>
+      <>
+      <Header />
+      <h1>Dashboard</h1>
+      </>
     )
   }
 }
