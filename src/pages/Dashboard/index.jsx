@@ -3,35 +3,9 @@ import React from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 
-import {Section} from './styles';
+import api from '../../services';
 
-const datas = [
-  {
-    id: 0,
-    title: "Facebook",
-    description: "We are working to build community through open source technology. NB: members must have two-factor auth."
-  },
-  {
-    id: 1,
-    title: "facebook / react",
-    description: "A declarative, efficient, and flexible JavaScript library for building user interfaces."
-  },
-  {
-    id: 2,
-    title: "vuejs",
-    description: "Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web."
-  },
-  {
-    id: 3,
-    title: "Angular",
-    description: "One framework. Mobile & desktop."
-  },
-  {
-    id: 4,
-    title: "Node.js",
-    description: "Node.js JavaScript runtime"
-  }
-]
+import {Section} from './styles';
 
 class DashboardComponent extends React.Component{
   render(){
@@ -54,6 +28,8 @@ class DashboardComponent extends React.Component{
             <section>
               <strong>Card01</strong>
               <span>Descrição01</span>
+              <span>Detalhes</span>
+              <span>Deletar</span>
             </section>
           </div>
         </div>
