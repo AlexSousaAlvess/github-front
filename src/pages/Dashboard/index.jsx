@@ -43,14 +43,13 @@ class DashboardComponent extends React.Component{
           placeholder='digite aqui'
         />
         <div>
-          <div>
-            <div></div>
-            <section>
-              <strong>Card01</strong>
-              <span>Descrição01</span>
-            </section>
-          </div>
-          <div>
+          <div
+            style={{
+              webkitBoxShadow: '0px 5px 5px 0px rgba(0,0,0,0.75)',
+              mozBoxShadow: '0px 5px 5px 0px rgba(0,0,0,0.75)',
+              boxShadow: '0px 5px 5px 0px rgba(0,0,0,0.75)',
+            }}
+          >
             <div></div>
             <section>
               <strong>Card01</strong>
