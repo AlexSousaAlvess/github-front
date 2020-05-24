@@ -3,6 +3,8 @@ import React from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 
+import {Section} from './styles';
+
 const datas = [
   {
     id: 0,
@@ -31,16 +33,36 @@ const datas = [
   }
 ]
 
-class Dashboard extends React.Component{
+class DashboardComponent extends React.Component{
   render(){
     return (
       <>
       <Header />
-      <h1>Dashboard</h1>
-      <Footer />
+      <Section>
+        <input
+          placeholder='digite aqui'
+        />
+        <div>
+          <div>
+            <div></div>
+            <section>
+              <strong>Card01</strong>
+              <span>Descrição01</span>
+            </section>
+          </div>
+          <div>
+            <div></div>
+            <section>
+              <strong>Card01</strong>
+              <span>Descrição01</span>
+            </section>
+          </div>
+        </div>
+      </Section>
+      {/* <Footer /> */}
       </>
     )
   }
 }
 
-export default Dashboard;
+export default DashboardComponent;
