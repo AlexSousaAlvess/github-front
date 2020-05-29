@@ -1,40 +1,53 @@
 import React from 'react';
 
 import Header from '../../components/header';
-import Footer from '../../components/footer';
+// import Footer from '../../components/footer';
+
+import { FiTrash2, FiArrowRight } from 'react-icons/fi';
 
 import api from '../../services';
 
-import {Section} from './styles';
+import { Container, Search, Card } from './styles';
 
-class DashboardComponent extends React.Component{
-  render(){
+class DashboardComponent extends React.Component {
+  render() {
     return (
       <>
-      <Header />
-      <Section>
-        <input
-          placeholder='digite aqui'
-        />
-        <div>
-          <div
-            style={{
-              webkitBoxShadow: '0px 5px 5px 0px rgba(0,0,0,0.75)',
-              mozBoxShadow: '0px 5px 5px 0px rgba(0,0,0,0.75)',
-              boxShadow: '0px 5px 5px 0px rgba(0,0,0,0.75)',
-            }}
-          >
-            <div></div>
-            <section>
+        <Header />
+        <Container>
+          <Search
+            placeholder='digite aqui'
+          />
+          <Card>
+            <div
+              style={{
+                margin: 10,
+                width: 400
+              }}
+            >
               <strong>Card01</strong>
-              <span>Descrição01</span>
-              <span>Detalhes</span>
-              <span>Deletar</span>
-            </section>
-          </div>
-        </div>
-      </Section>
-      {/* <Footer /> */}
+              <p>Descrição01</p>
+            </div>
+            <div
+              style={{
+                width: 100,
+                margin: 'auto'
+              }}
+            >
+              <FiTrash2
+                size={20}
+                color="#656176"
+                onClick={() => console.log("Deletar")}
+              />
+              <FiArrowRight
+                size={20}
+                color="#656176"
+                onClick={() => console.log("Proximo")}
+              />
+            </div>
+          </Card>
+        </Container>
+        {/* <Footer /> */}
       </>
     )
   }
